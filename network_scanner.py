@@ -2,6 +2,11 @@ import socket
 import ipaddress
 from concurrent.futures import ThreadPoolExecutor
 
+'''
+- network_scanner.py - Linux Targets
+- scan.bat - Windows targets
+'''
+
 def scan_ip(ip):
     try:
         socket.gethostbyaddr(str(ip))
